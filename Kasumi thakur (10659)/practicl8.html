@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Q8: CSS Selectors</title>
+  <style>
+    /* Universal selector */
+    * {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Group selector */
+    h1, h2, p {
+      margin-bottom: 10px;
+    }
+
+    /* Class selector */
+    .highlight {
+      background-color: yellow;
+      padding: 5px;
+    }
+
+    /* ID selector */
+    #unique {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Descendant selector */
+    .container p {
+      color: green;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Selectors Demo</h1>
+
+  <p class="highlight">This uses a <strong>class selector</strong>.</p>
+
+  <p id="unique">This uses an <strong>ID selector</strong> (should be unique!)</p>
+
+  <div class="container">
+    <p>This paragraph is inside <code>.container</code> → styled by <strong>descendant selector</strong>.</p>
+    <p>All paragraphs here are green and italic.</p>
+  </div>
+
+  <h2>Group Selector</h2>
+  <p>Both h1, h2, and p share bottom margin via <strong>group selector</strong>.</p>
+</body>
+</html>

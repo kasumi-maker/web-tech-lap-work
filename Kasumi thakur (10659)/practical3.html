@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Table</title>
+    <style>
+        body {
+            background-color: #f9fcff;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #003366;
+        }
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: 20px auto;
+            background-color: #ffffff;
+        }
+        caption {
+            font-size: 18px;
+            font-weight: bold;
+            color: #004080;
+            margin-bottom: 8px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #cce5ff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f9ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Information Table</h1>
+
+    <table>
+        <caption>Student Marks Sheet - 2025</caption>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="3">Subjects</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <td>Kasumi</td>
+            <td>90</td>
+            <td>85</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>Riya</td>
+            <td>92</td>
+            <td>87</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td>Arjun</td>
+            <td>80</td>
+            <td>83</td>
+            <td>79</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  // Promise example
+  function myPromise() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("Promise Resolved!");
+      }, 2000);
+    });
+  }
+
+  // async / await
+  async function showResult() {
+    let result = await myPromise();
+    console.log(result);
+  }
+
+  showResult();
+</script>
+</body>
+</html>

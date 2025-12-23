@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile Card</title>
+
+<style>
+/* ---------- Element Selector ---------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ---------- ID Selector ---------- */
+#card {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: relative; /* relative positioning */
+    transition: transform 0.4s;
+}
+
+/* ---------- Pseudo-class + Transform ---------- */
+#card:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Class Selector ---------- */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* ---------- Element Selector ---------- */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* ---------- Class Selector ---------- */
+.role {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
+/* ---------- Box Model ---------- */
+.info {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+/* ---------- Absolute Position ---------- */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: green;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* ---------- Display Type ---------- */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* ---------- Buttons + Pseudo-classes ---------- */
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: 2px solid orange;
+}
+</style>
+</head>
+
+<body>
+
+<div id="card">
+    <div class="badge">ONLINE</div>
+
+    <img src="https://via.placeholder.com/100" class="profile-img" alt="Profile">
+
+    <h2>Kasumi Thakur</h2>
+    <p class="role">Web Developer</p>
+
+    <div class="info">
+        <p>Email: kasumi@email.com</p>
+        <p>Location: India</p>
+    </div>
+
+    <div class="buttons">
+        <button>Follow</button>
+        <button>Message</button>
+    </div>
+</div>
+
+</body>
+</html>

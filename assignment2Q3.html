@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="heading">Hello World</h2>
+<p id="para">This is a paragraph</p>
+
+<button onclick="changeText()">Change Text</button>
+
+<script>
+  function changeText() {
+    // Selecting elements
+    let h = document.getElementById("heading");
+    let p = document.getElementById("para");
+
+    // innerText
+    h.innerText = "Text changed using innerText";
+
+    // innerHTML
+    p.innerHTML = "<b>Bold text using innerHTML</b>";
+  }
+</script>
+
+</body>
+</html>

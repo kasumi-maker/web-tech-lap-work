@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  // var (function scope, hoisted)
+  console.log(a);   // undefined (hoisted)
+  var a = 10;
+
+  // let (block scope, not accessible before declaration)
+  // console.log(b); // ❌ Error
+  let b = 20;
+
+  // const (block scope, value cannot be changed)
+  const c = 30;
+  // c = 40; // ❌ Error
+
+  if (true) {
+    var x = 1;
+    let y = 2;
+    const z = 3;
+  }
+
+  console.log(x); // works
+  // console.log(y); // ❌ Error
+  // console.log(z); // ❌ Error
+</script>
+</body>
+</html>
