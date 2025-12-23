@@ -6,7 +6,7 @@ This repository contains my Web Technology lab work.
 - Name: Kasumi Thakur
 - Course: B.Tech
 - Subject: Web Technology
-- College: (Your college name)
+- College: RISU
 
 ## Tools Used
 - HTML
